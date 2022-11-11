@@ -36,10 +36,35 @@ header >nav > a{
     color: #1B434D;
 }
 
+header >nav > a:hover{
+    color: #eceaea;
+    background: #222A38;
+}
+
+header >nav > a:active{
+    box-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+
 #apresentacao{
     display: grid;
     grid-template-columns: 50% 50%;
 }
+
+#apresentacao>article{
+    display: flex;
+    justify-content: center;
+}
+
+#apresentacao:hover{
+    background: #b0acac;
+    border-radius: 4px;
+}
+
+span:hover{
+    background: #828080;
+}
+
 
 article#intro{
     display: flex;
@@ -56,7 +81,15 @@ article#intro>input{
 article#intro>h1>span{
     font-size: 30px;
     font-family: 'Dancing Script', cursive;
+    position: relative;
 }
+
+article#intro>h1>span:hover{
+    font-size: 35px;
+    font-family: 'Dancing Script', cursive;
+}
+
+
 
 figure#imagem{
     display: flex;
@@ -78,11 +111,25 @@ section#clientes{
     align-items: center;
 }
 
+section#clientes:hover{
+    background: #b0acac;
+    border-radius: 4px;
+    justify-content: center;
+}
+
 section#clientes > nav{
     display: flex;
     align-items: center;
     justify-content: right;
 }
+
+section#clientes > nav>a>img:hover{
+    position: relative;
+    top: -5px;
+}
+
+
+
 
 img#mateus{
     width: 150px;
