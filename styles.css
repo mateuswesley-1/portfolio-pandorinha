@@ -103,6 +103,11 @@ figure#imagem>img{
     height: 300px;
 }
 
+figure#imagem>img:hover{
+    position: relative;
+    top: -20px;
+}
+
 section#clientes{
     margin-top: 100px;
     display: flex;
@@ -126,10 +131,8 @@ section#clientes > nav{
 section#clientes > nav>a>img:hover{
     position: relative;
     top: -5px;
+    
 }
-
-
-
 
 img#mateus{
     width: 150px;
@@ -155,15 +158,47 @@ section#propaganda{
 section#propaganda > figure>img{
     width: 300px;
     border-radius: 5%;
+    
+}
+
+section#propaganda > figure>img:hover{
+    position: relative;
+    top: -20px;
+    box-shadow: 2px 2px 1px black;
 }
 
 #imediatamente{
     padding: 2px;
-    background: rgb(226, 134, 134);
+    background: rgb(246, 125, 125);
 }
 
+#imediatamente:hover{
+    background: rgb(0, 0, 0);
+    color: rgb(246, 125, 125);
+}
+
+#meAdote{
+    padding: 2px;
+    background: yellow;
+}
+
+#meAdote:hover{
+    padding: 2px;
+    background: rgb(10, 10, 7);
+    color: yellow;
+}
+
+
+
 input#email{
-    width: 100px;
+    width: 300px;
+    
+}
+
+#emailbutton{
+    color: #eceaea;
+    padding: 4px 2px; 
+    background: #222A38;
 }
 
 section#projetos{
@@ -191,4 +226,16 @@ footer{
 
 section#projetos > article>div{
     text-align: center;
+}
+section#projetos > article>div:hover{
+    position: relative;
+    top:-20px;  
+}
+section#projetos > article>div:active{
+    position: relative;
+    top:-40px; 
+}
+
+section#projetos > article>div>figure>img:hover{
+    width: 200px;
 }
