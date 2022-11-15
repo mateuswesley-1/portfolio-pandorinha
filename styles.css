@@ -1,6 +1,4 @@
 body{
-    margin-left: 15%;
-    margin-right: 15%;
     font-family: 'Roboto Mono', monospace;
     background: #eceaea;
 }
@@ -16,8 +14,10 @@ header{
     margin-bottom: 50px;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+    max-width: 600px;
+    margin: 100px auto;
+    gap: 40px;
 }
-
 
 header > h2{
     font-family: 'Dancing Script', cursive;
@@ -49,17 +49,16 @@ header >nav > a:active{
 #apresentacao{
     display: grid;
     grid-template-columns: 50% 50%;
+    max-width: 600px;
+    margin: 100px auto;
 }
 
 #apresentacao>article{
     display: flex;
     justify-content: center;
+    max-width: 500px;
 }
 
-#apresentacao:hover{
-    background: #b0acac;
-    border-radius: 4px;
-}
 
 span:hover{
     background: #828080;
@@ -72,6 +71,7 @@ article#intro{
     text-align: left;
     gap: 20px;
     padding-left: 40px;
+
 }
 
 article#intro>input{
@@ -112,21 +112,21 @@ figure#imagem>img:hover{
 section#clientes{
     margin-top: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     text-align: center;
     align-items: center;
+    max-width: 600px;
+    margin: 100px auto;
+    flex-wrap: wrap;
 }
 
 section#clientes:hover{
-    background: #b0acac;
-    border-radius: 4px;
     justify-content: center;
 }
 
 section#clientes > nav{
     display: flex;
     align-items: center;
-    justify-content: right;
 }
 
 section#clientes > nav>a>img:hover{
@@ -136,37 +136,50 @@ section#clientes > nav>a>img:hover{
 }
 
 img#mateus{
-    width: 150px;
+    max-width: 150px;
     border-radius: 100%;
 }
 
 img#luno{
-    width: 100px;
+    max-width: 100px;
     border-radius: 100%;
 }
 
 img#amanda{
-    width: 100px;
+    max-width: 100px;
     border-radius: 100%;
 }
 
 section#propaganda{
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 600px;
+    margin: 100px auto;
 }
 
+
+section#propaganda>article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 550px;
+    margin: auto;
+}
+
+
 section#propaganda > figure>img{
-    width: 300px;
+    max-width: 200px;
     border-radius: 5%;
     
 }
 
 section#propaganda > figure>img:hover{
-    position: relative;
-    top: -20px;
     box-shadow: 2px 2px 1px black;
 }
+
+
 
 #imediatamente{
     padding: 2px;
@@ -192,7 +205,8 @@ section#propaganda > figure>img:hover{
 
 
 input#email{
-    width: 300px;
+   max-width: 300px;
+   border-radius: 4px;
     
 }
 
@@ -200,17 +214,37 @@ input#email{
     color: #eceaea;
     padding: 4px 2px; 
     background: #222A38;
+    margin-bottom: 20px;
 }
 
+#emailbutton:hover{
+    color: #222A38;
+    background: #eceaea;
+}
+
+#emailbutton:active{
+    position: relative;
+    top: 3px;
+    left: 3px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.37);
+}
+
+
 section#projetos{
-    margin-top: 100px;
+    max-width: 600px;
+    padding: 40px;
+    margin: auto;
 }
 
 section#projetos > article{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    flex-wrap: wrap;
+}
+
+section#projetos > article>div{
+    max-width: 300px;
 }
 
 .img_port{
@@ -223,6 +257,8 @@ footer{
     text-align: center;
     padding: 10px;
     border-radius: 5%;
+    max-width: 600px;
+    margin: 100px auto;
 }
 
 section#projetos > article>div{
